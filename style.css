@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@700;800&family=Roboto+Condensed&display=swap');
+
+/* CORE PROPERTIES */
+body {
+	margin: 0;
+	font-family: 'Azeret Mono', sans-serif;
+	font-size: 18px;
+	color: white;
+	background: #101010;
+}
+
+h1 {
+	margin: 0 0 35px 0;
+}
+
+h2 {
+	margin: 0.5em 0;
+}
+
+h3 {
+	margin: 0 0 0.6em 0;
+}
+
+p {
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0 0 20px 0;
+	text-align: justify;
+}
+
+a:link, a:visited, a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	margin: 15px;
+}
+
+/* Sections */
+section {
+	position: relative;
+	min-height: auto;
+
+	padding: 25px;
+}
+
+section h1 {
+	font-size: 2.6em;
+}
+
+/* Background colors */
+.red {
+	background: #CD1319;
+}
+
+.black {
+	background: #101010;
+}
+
+.yellow {
+	background: #ffa801;
+}
+
+.spacer {
+	aspect-ratio: 960/150;
+	width: 100%;
+}
+
+.background {
+	background-color: #214ed4;
+	background-image: url('./svg/line.svg');
+	background-repeat: no-repeat;
+	background-position: 50% 20%;
+	background-size: contain;
+}
+
+.blue-wave {
+	background-image: url('./svg/wave/wave1.svg');
+}
+
+.red-wave1 {
+	background-image: url('./svg/wave/wave2.svg');
+}
+
+.red-wave2 {
+	background-image: url('./svg/wave/wave3.svg');
+}
+
+.yellow-wave {
+	background-image: url('./svg/wave/wave4.svg');
+}
+
+/* LINKS */
+.black a, .red a, .yellow a {
+	font-weight: 700;
+}
+
+.black a, .black h1 {
+	color: #e65d0e;
+}
+
+.red a, .red h1, .yellow a, .yellow h1 {
+	color: #101010;
+}
+
+.yellow-t a, .yellow-t h1 {
+	color: #ffa801;
+}
+
+/* Header */
+.header {
+	padding: 180px 40px 0 40px;
+}
+
+.header h1 {
+	font-size: 4.5em;
+}
+
+.header h2 {
+	font-size: 2.1em;
+	margin: 0.5em 0;
+	color: #101010;
+}
+
+.header .flexy {
+	justify-content: space-evenly;
+}
+
+/* BLOB */
+.blob > svg {
+	position: absolute;
+
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.maxi > svg {
+	width: 90%;
+}
+
+.lb-minus > svg {
+	opacity: 0.45;
+	max-width: 15%;
+	top: 80%;
+	left: 90%;
+}
+
+.l-1 {
+	left: 89% !important;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+/* FLEX BOX */
+.flexy {
+	display: flex;
+	justify-content: space-between;
+
+	margin: auto 40px;
+}
+
+.in-column {
+	flex-direction: column;
+}
+
+.basis-100 {
+	flex-basis: 100%;
+}
+
+.relatives {
+	position: relative;
+}
+
+/* OTHER */
+.place {
+	font-style: italic;
+	opacity: 0.85;
+	font-size: 0.95em;
+}
+
+.mb-100 {
+	margin-bottom: 100px;
+}
+
+.m-0-20 > div {
+	margin: 0 20px;
+}
+
+.strong-blue strong {
+	color: #214ed4
+}
+
+.li-mr-10 > li {
+	margin-right: 10px;
+}
+
+/* UNDER 700px CSS here */
+@media screen and (max-width: 700px) {
+	body {
+		font-size: 15px;
+	}
+
+	img {
+		width: 120px;
+		height: 120px;
+	}
+
+	section h1 {
+		font-size: 2em;
+	}
+
+	.header {
+		height: auto;
+	}
+
+	.header h1 {
+		font-size: 3em;
+	}
+
+	.header h2 {
+		font-size: 1.6em;
+	}
+
+	.to-border {
+		flex-direction: column;
+	}
+
+	.empty-one {
+		min-height: 200px;
+	}
+
+	.mb-100 {
+		margin: 0 0 15px 0;
+	}
+
+	.lb-minus > svg {
+		max-width: 25%;
+		top: 85%;
+		left: 20%;
+	}
+	
+	.l-1 {
+		left: 19% !important;
+	}
+
+}
+
+/* UNDER 400px CSS here */
+@media screen and (max-width: 520px) {
+	.header {
+		padding: 180px 20px 0 20px;
+	}
+
+	section .flexy {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.flexy {
+		margin: auto 20px;
+	}
+
+	.header h1 {
+		margin-bottom: 15px;
+	}
+
+	img {
+		margin: 15px auto;
+	}
+
+	ul {
+		padding: 0;
+		list-style-type: none;
+	}
+
+	.lb-minus > svg {
+		max-width: 35%;
+		top: 60%;
+		left: 80%;
+	}
+	
+	.l-1 {
+		left: 79% !important;
+	}
+
+	.yellow p {
+		text-align:start;
+	}
+}
